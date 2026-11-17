@@ -1,0 +1,94 @@
+Table hospitals {
+  hospital_id int [pk]
+  hospital_name varchar
+  address varchar
+  number_of_beds int
+  hospital_type varchar
+  accreditation_date date
+  emergency_services varchar
+}
+
+Table doctors {
+  doctor_id int [pk]
+  first_name varchar
+  last_name varchar
+  date_of_birth date
+  address varchar
+  specialty varchar
+  hospital_id int
+}
+
+Table patients {
+  patient_id int [pk]
+  first_name varchar
+  last_name varchar
+  date_of_birth date
+  address varchar
+  doctor_id int
+}
+
+Table medications {
+  medication_id int [pk]
+  medication_name varchar
+  dosage varchar
+}
+
+Table prescriptions {
+  prescription_id int [pk]
+  patient_id int
+  doctor_id int
+  medication_id int
+  prescription_date date
+}
+
+Table diseases {
+  disease_id int [pk]
+  disease_name varchar
+}
+
+Table appointments {
+  appointment_id int [pk]
+  patient_id int
+  doctor_id int
+  appointment_date datetime
+  status varchar
+}
+
+Table lab_results {
+  lab_result_id int [pk]
+  patient_id int
+  doctor_id int
+  test_type varchar
+  result_value decimal
+  test_date date
+}
+
+Table disease_medication {
+  disease_id int
+  medication_id int
+  indexes {
+    (disease_id, medication_id) [pk]
+  }
+}
+
+Table disease_specialist {
+  disease_id int
+  doctor_id int
+  indexes {
+    (disease_id, doctor_id) [pk]
+  }
+}
+
+Ref: doctors.hospital_id > hospitals.hospital_id
+Ref: patients.doctor_id > doctors.doctor_id
+Ref: prescriptions.patient_id > patients.patient_id
+Ref: prescriptions.doctor_id > doctors.doctor_id
+Ref: prescriptions.medication_id > medications.medication_id
+Ref: appointments.patient_id > patients.patient_id
+Ref: appointments.doctor_id > doctors.doctor_id
+Ref: lab_results.patient_id > patients.patient_id
+Ref: lab_results.doctor_id > doctors.doctor_id
+Ref: disease_medication.disease_id > diseases.disease_id
+Ref: disease_medication.medication_id > medications.medication_id
+Ref: disease_specialist.disease_id > diseases.disease_id
+Ref: disease_specialist.doctor_id > doctors.doctor_id
