@@ -1,0 +1,10 @@
+hospitals: HospitalID, HospitalName, Address, NumberOfBeds, HospitalType, AccreditationDate, EmergencyServices
+doctors: DoctorID, FirstName, LastName, DateOfBirth, Address, Specialty, HospitalID
+patients: PatientID, FirstName, LastName, DateOfBirth, Address, DoctorID
+medications: MedicationID, MedicationName, Dosage
+prescriptions: PrescriptionID, PatientID, DoctorID, MedicationID, PrescriptionDate
+diseases: DiseaseID, DiseaseName
+disease_medication: DiseaseID, MedicationID
+disease_specialist: DiseaseID, DoctorID
+appointments: AppointmentID, PatientID, DoctorID, AppointmentDate, Status
+lab_results: LabResultID, PatientID, DoctorID, TestType, ResultValue, TestDate
