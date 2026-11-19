@@ -42,7 +42,7 @@ Information Included:
 | disease_specialist | Which doctor specialises in which disease | |
 | appointments | Scheduled appointments | 300 |
 | lab_results | Lab test results for patients | 300 |
-  Hospital (40), Doctor (100), Patient (600), Medication (30+), Prescription (500), etc.
+
   
 Key Relationships:
 One hospital has many doctors; each doctor works at one hospital
