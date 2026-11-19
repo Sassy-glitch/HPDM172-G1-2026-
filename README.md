@@ -64,6 +64,7 @@ Link tables: the two table names joined by an underscore
 1. Clone the repo.
 2. Create the database
 3. Run a query
+   
 As this project is coursework so the repository is no longer active; no contribution or upload instructions are provided.
 
 ## SQL Queries: 
