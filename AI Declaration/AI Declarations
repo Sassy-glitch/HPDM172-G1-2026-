@@ -1,0 +1,11 @@
++------------+-----------------+--------------------------+----------------------------------------------------+---------------------+--------------------------+
+| DATE       | GENAI TOOL USED | PURPOSE                  | PROMPT                                             | HYPERLINK TO OUTPUT | SECTION OF WORK USED FOR |
++------------+-----------------+--------------------------+----------------------------------------------------+---------------------+--------------------------+
+| 10/11/2026 | Claude          | To help create data CSVs | 'I am completing a university database assignment  | N.A.                | Data Generation          |
+|            |                 |                          | using MySQL. I need realistic but fictional data   |                     |                          |
+|            |                 |                          | for a hospital database. The data must be          |                     |                          |
+|            |                 |                          | internally consistent so that foreign key          |                     |                          |
+|            |                 |                          | relationships work correctly. Generate the data in |                     |                          |
+|            |                 |                          | CSV format first. [Then individual prompts for     |                     |                          |
+|            |                 |                          | data criteria]'                                    |                     |                          |
++------------+-----------------+--------------------------+----------------------------------------------------+---------------------+--------------------------+
