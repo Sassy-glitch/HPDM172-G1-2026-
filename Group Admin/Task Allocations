@@ -1,0 +1,177 @@
+Week 1 (16 Nov - 22 Nov): Planning & Setup
+
+Person 1 - Database Design
+•	Create draft ERD
+•	Identify all entities
+•	Define primary keys
+•	Define foreign keys
+•	Review relationships with group
+
+Person 2 - Database Development
+•	Review ERD
+•	Plan MySQL table structure
+•	Define data types for each field
+•	Draft CREATE TABLE statements
+
+Person 3 - Data Management
+•	Review all CSV files
+•	Check row counts match specification
+•	Identify missing data
+•	Verify IDs are unique
+
+Person 4 - SQL Queries
+•	Review all required assignment queries
+•	Determine tables needed for each query
+•	Create SQL query plan document
+
+Person 5 - Documentation
+•	Create GitHub repository
+•	Add collaborators
+•	Create folder structure
+•	Create README draft
+•	Create Meeting Agenda 1
+•	Write Meeting Minutes 1
+
+Week 2 (23 Nov - 29 Nov): Build Database and Import Data
+
+Person 1 - Database Design
+•	Finalise draw.io ERD
+•	Create flowchart
+•	Create pseudocode
+•	Upload planning documents
+
+Person 2 - Database Development
+•	Create MySQL database
+•	Create all tables
+•	Apply primary keys
+•	Apply foreign keys
+•	Apply constraints
+
+Person 3 - Data Management
+•	Import Hospitals CSV
+•	Import Doctors CSV
+•	Import Patients CSV
+•	Import Medications CSV
+•	Import Diseases CSV
+•	Import all remaining CSVs
+
+Person 4 - SQL Queries
+•	Begin:
+o	Doctors at hospital
+o	Prescriptions by patient
+o	Prescriptions by doctor
+o	Ordered prescriptions query
+
+Person 5 - Documentation
+•	Upload all files to GitHub
+•	Update README
+•	Verify everybody commits work
+•	Organise portfolio folder
+
+Week 3 (30 Nov - 6 Dec):Complete Queries & Testing
+
+Person 1 - Database Design
+•	Review all relationships
+•	Verify all foreign key links work
+•	Help troubleshoot database issues
+
+Person 2 - Database Development
+•	Validate imports
+•	Fix broken relationships
+•	Check integrity constraints
+•	Export test backups
+
+Person 3 - Data Management
+Run validation checks:
+•	Every hospital has doctor(s)
+•	Every patient has doctor
+•	All appointments valid
+•	All prescriptions valid
+•	No orphan records
+
+Person 4 - SQL Queries
+Complete all remaining queries:
+•	Add patient
+•	Update patient address
+•	Patients at hospital
+•	Specialists for disease
+•	Appointments for patient
+•	Appointments for doctor
+•	Doctor with most prescriptions
+•	Largest hospital query
+•	Emergency services query
+•	All remaining advanced queries
+
+Person 5 - Documentation
+•	Meeting Agenda 2
+•	Meeting Minutes 2
+•	Create Action Plan
+•	Create Milestones Document
+•	Upload documents to GitHub
+
+Week 4 (7 Dec - 9 Dec): Final Review
+
+Person 1 - Design Review
+•	Verify ERD matches database exactly
+•	Verify all relationships documented
+•	Produce final ERD export
+
+Person 2 - Database Review
+•	Check all tables
+•	Check all constraints
+•	Export final SQL file
+•	Create schema backup
+
+Person 3 - Data Review
+•	Verify row counts:
+o	40 Hospitals
+o	100 Doctors
+o	600 Patients
+o	500 Prescriptions
+o	300 Appointments
+o	300 Lab Results
+•	Check for duplicate records
+
+Person 4 - Query Testing
+Test every query:
+•	Execute query
+•	Verify results
+•	Save screenshots if required
+•	Fix errors
+
+Person 5 - Documentation
+•	Final README
+•	GitHub Pages website
+•	Add screenshots
+•	Add ERD image
+•	Add project overview
+
+Submission Day (10 Dec):
+
+Person 1
+•	Verify planning documents included
+
+Person 2
+•	Verify SQL export included
+
+Person 3
+•	Verify CSVs included
+
+Person 4
+•	Verify all queries included
+
+Person 5
+•	ZIP repository
+•	Complete AI declaration
+•	Submit:
+o	ZIP
+o	GitHub URL
+o	AI declaration
+
+Person Allocation: 
+
+Person 1 = Maizy
+Person 2 = Nsuhoridem
+Person 3 = Dana
+Person 4 = Anuja
+Person 5 = Sassy
