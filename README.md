@@ -70,11 +70,11 @@ As this project is coursework so the repository is no longer active; no contribu
 ## SQL Queries: 
 
 ## Members: 
-Anuja Alias
-Dana Basal
-Maizy Carey 
-Nsuhoridem Aman Ekong
-Sassy Drake
+1. Anuja Alias
+2. Dana Basal
+3. Maizy Carey 
+4. Nsuhoridem Aman Ekong
+5. Sassy Drake
 
 (See Group Admin for Task Assignment)
 
