@@ -1,19 +1,24 @@
-GOAL #2 <Build Database and Import Data>						
-Finalise ERD	Maizy	High	In Progress	19/11/2026	28/11/2026	
-Create flowchart	Maizy	High	In Progress	19/11/2026	28/11/2026	
-Create pseudocode	Maizy	High	In Progress	19/11/2026	28/11/2026	
-Upload planning documents	Maizy	High	In Progress	19/11/2026	28/11/2026	
-Create MySQL database	Nsuhoridem	High	In Progress	19/11/2026	28/11/2026	
-Create all tables	Nsuhoridem	High	In Progress	19/11/2026	28/11/2026	
-Apply primary keys	Nsuhoridem	High	In Progress	19/11/2026	28/11/2026	
-Apply foreign keys	Nsuhoridem	High	In Progress	19/11/2026	28/11/2026	
-Apply constraints	Nsuhoridem	High	In Progress	19/11/2026	28/11/2026	
-Import all CSVs	Dana	High	In Progress	19/11/2026	28/11/2026	
-Start doctors at hospital SQL 	Anuja	High	In Progress	19/11/2026	28/11/2026	
-Start prescriptions by patient SQL	Anuja	High	In Progress	19/11/2026	28/11/2026	
-Start prescriptions by doctor SQL	Anuja	High	In Progress	19/11/2026	28/11/2026	
-Start ordered prescriptions SQL	Anuja	High	In Progress	19/11/2026	28/11/2026	
-Upload all files to GitHub	Sassy	High	In Progress	19/11/2026	28/11/2026	
-Update README	Sassy	High	In Progress	19/11/2026	28/11/2026	
-Verify everybody commits work	Sassy	High	In Progress	19/11/2026	28/11/2026	
-Organise portfolio folder	Sassy	High	In Progress	19/11/2026	28/11/2026	
+Action Plan For Week 2 (23rd November to 29th November):
+
+GOAL #2 <Build Database and Import Data>
+
+ACTION                                  RESPONSIBLE  PRIORITY  STATUS       START DATE  END DATE  
+
+Finalise ERD                            Maizy        High      In Progress  19/11/2026  28/11/2026
+Create flowchart                        Maizy        High      In Progress  19/11/2026  28/11/2026
+Create pseudocode                       Maizy        High      In Progress  19/11/2026  28/11/2026
+Upload planning documents               Maizy        High      In Progress  19/11/2026  28/11/2026
+Create MySQL database                   Nsuhoridem   High      In Progress  19/11/2026  28/11/2026
+Create all tables                       Nsuhoridem   High      In Progress  19/11/2026  28/11/2026
+Apply primary keys                      Nsuhoridem   High      In Progress  19/11/2026  28/11/2026
+Apply foreign keys                      Nsuhoridem   High      In Progress  19/11/2026  28/11/2026
+Apply constraints                       Nsuhoridem   High      In Progress  19/11/2026  28/11/2026
+Import all CSVs                         Dana         High      In Progress  19/11/2026  28/11/2026
+Start doctors at hospital SQL           Anuja        High      In Progress  19/11/2026  28/11/2026
+Start prescriptions by patient SQL      Anuja        High      In Progress  19/11/2026  28/11/2026
+Start prescriptions by doctor SQL       Anuja        High      In Progress  19/11/2026  28/11/2026
+Start ordered prescriptions SQL         Anuja        High      In Progress  19/11/2026  28/11/2026
+Upload all files to GitHub              Sassy        High      In Progress  19/11/2026  28/11/2026
+Update README                           Sassy        High      In Progress  19/11/2026  28/11/2026
+Verify everybody commits work           Sassy        High      In Progress  19/11/2026  28/11/2026
+Organise portfolio folder               Sassy        High      In Progress  19/11/2026  28/11/2026
