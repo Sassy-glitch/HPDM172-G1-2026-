@@ -26,7 +26,7 @@ Built for HPDM172 Coursework by Team 1.
 | `Group Admin` | Meeting agendas (x2), minutes (x2), action plan |
 | `README.md` | GitHub Pages content |
 
-## Database Overview 
+## Database Overview:
 
 ## How To Use: 
 
