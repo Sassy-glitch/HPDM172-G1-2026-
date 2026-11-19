@@ -45,6 +45,7 @@ Information Included:
 
   
 Key Relationships:
+
 One hospital has many doctors; each doctor works at one hospital
 One doctor has many patients; each patient is registered to one doctor
 A prescription is for one patient, one doctor and one medication
@@ -53,6 +54,7 @@ Diseases and doctors are many-to-many (specialists), linked through disease_spec
 Appointments and lab results each belong to one patient and are requested by one doctor.
 
 Naming Conventions:
+
 Table names: lowercase, plural, underscores between words
 Column names: lowercase, plural, underscores between words
 - Primary keys: ?? -
