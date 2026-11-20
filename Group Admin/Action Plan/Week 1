@@ -1,0 +1,28 @@
+Action Plan for Week 1 (16th November to 22nd November):
+
+GOAL #1 <Planning & Setup>
+
+ACTION                                  RESPONSIBLE  PRIORITY  STATUS    START DATE  END DATE    
+
+Create draft ERD                        Maizy        High      Complete  16/11/2026  19/11/2026
+Identify all entities                   Maizy        High      Complete  16/11/2026  19/11/2026
+Define primary keys                     Maizy        High      Complete  16/11/2026  19/11/2026
+Define foreign keys                     Maizy        High      Complete  16/11/2026  19/11/2026
+Review relationships with group         Maizy        High      Complete  16/11/2026  19/11/2026
+Review ERD                              Nsuhoridem   High      Complete  16/11/2026  19/11/2026
+Plan MySQL table structure              Nsuhoridem   High      Complete  16/11/2026  19/11/2026
+Define data types for each field        Nsuhoridem   High      Complete  16/11/2026  19/11/2026
+Draft CREATE TABLE statements           Nsuhoridem   High      Complete  16/11/2026  19/11/2026
+Review all CSV files                    Dana         High      Complete  16/11/2026  19/11/2026
+Check row counts match specification    Dana         High      Complete  16/11/2026  19/11/2026
+Identify missing data                   Dana         High      Complete  16/11/2026  19/11/2026
+Verify IDs are unique                   Dana         High      Complete  16/11/2026  19/11/2026
+Review all required assignment queries  Anuja        High      Complete  16/11/2026  19/11/2026
+Determine tables needed for each query  Anuja        High      Complete  16/11/2026  19/11/2026
+Create SQL query plan document          Anuja        High      Complete  16/11/2026  19/11/2026
+Create GitHub repository                Sassy        High      Complete  16/11/2026  19/11/2026
+Add collaborators                       Sassy        High      Complete  16/11/2026  19/11/2026
+Create folder structure                 Sassy        High      Complete  16/11/2026  19/11/2026
+Create README draft                     Sassy        High      Complete  16/11/2026  19/11/2026
+Create Meeting Agenda                   Sassy        High      Complete  16/11/2026  19/11/2026
+Write Meeting Minutes                   Sassy        High      Complete  16/11/2026  19/11/2026

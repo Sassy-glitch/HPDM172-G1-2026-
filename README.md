@@ -1,23 +1,85 @@
-# HPDM172 Group 1 2026 Projectple
+# HPDM172 Group 1 2026 Project
 
-Website: https://sassy-glitch.github.io/HPDM172-G1-2026-/
+## Website: 
+https://sassy-glitch.github.io/HPDM172-G1-2026-/
 
-Project Description: 
+## Project Description: 
+A MySQL hospital database covering:
+- Hospitals
+- Doctors
+- Patients
+- Medications
+- Prescriptions
+- Diseases
+- Appointments
+- Lab Results
+Built for HPDM172 Coursework by Team 1. 
 
+## Contents: 
+| Folder | Description |
+|---|---|
+| `Planning` | ERD, flowchart, pseudocode |
+| `Data` | CSV files used for import |
+| `SQL Tables` | Table creation scripts and the 19 query files |
+| `SQL Code` | Full MySQL export (mysqldump) |
+| `Group Admin` | Meeting agendas (x2), minutes (x2), action plan |
+| `Gen AI` | How generative AI was used in this assignment |
+| `README.md` | GitHub Pages content |
 
-Main Files:
+## Database Overview:
+- Brief description of ERD, with the ERD image embedded -
 
+Information Included:
+| Table | Purpose | Rows |
+|---|---|---|
+| hospitals | Details of each hospital (beds, type, accreditation, emergency services) | 40 |
+| doctors | Doctors and the hospital each works at | 100 |
+| patients | Patients and their registered doctor | 600 |
+| medications | Available medications | 30+ |
+| prescriptions | Medication prescribed to a patient by a doctor | 500 |
+| diseases | List of diseases | |
+| disease_medication | Which medication treats which disease | |
+| disease_specialist | Which doctor specialises in which disease | |
+| appointments | Scheduled appointments | 300 |
+| lab_results | Lab test results for patients | 300 |
 
-How To Use The Files:
+  
+Key Relationships:
 
+One hospital has many doctors; each doctor works at one hospital
+One doctor has many patients; each patient is registered to one doctor
+A prescription is for one patient, one doctor and one medication
+Diseases and medications are many-to-many, linked through diseases_medication
+Diseases and doctors are many-to-many (specialists), linked through disease_specialist
+Appointments and lab results each belong to one patient and are requested by one doctor.
 
-ERD Diagram: 
+Naming Conventions:
 
+Table names: lowercase, plural, underscores between words
+Column names: lowercase, plural, underscores between words
+- Primary keys: ?? -
+- Foreign keys: ?? -
+Link tables: the two table names joined by an underscore
+- Query files: numbered with a clear name -
 
-Relationship Diagram:
+## How To Use: 
+1. Clone the repo.
+2. Create the database
+3. Run a query
+   
+As this project is coursework so the repository is no longer active; no contribution or upload instructions are provided.
 
+## SQL Queries: 
 
-Tables: 
+## Members: 
+1. Anuja Alias
+2. Dana Basal
+3. Maizy Carey 
+4. Nsuhoridem Aman Ekong
+5. Sassy Drake
 
+(See Group Admin for Task Assignment)
 
-Our SQL Queries And Their Function: 
+## AI Declaration:
+We declare that we have referenced use of generative AI outputs within our assessment in line with the University of Exeter referencing guidelines. 
+(See GenAI folder for more information)

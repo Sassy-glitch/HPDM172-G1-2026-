@@ -1,0 +1,180 @@
+Group Project Plan:
+
+Group:
+PERSON    ROLE                  NAME
+Person 1  Database Design       Maizy
+Person 2  Database Development  Nsuhoridem
+Person 3  Data Management       Dana
+Person 4  SQL Queries           Anuja
+Person 5  Documentation         Sassy
+
+---
+
+Week 1 (16 Nov – 22 Nov): Planning & Setup
+
+Person 1 – Database Design (Maizy)
+- Create draft ERD
+- Identify all entities
+- Define primary keys
+- Define foreign keys
+- Review relationships with group
+
+Person 2 – Database Development (Nsuhoridem)
+- Review ERD
+- Plan MySQL table structure
+- Define data types for each field
+- Draft CREATE TABLE statements
+
+Person 3 – Data Management (Dana)
+- Review all CSV files
+- Check row counts match specification
+- Identify missing data
+- Verify IDs are unique
+
+Person 4 – SQL Queries (Anuja)
+- Review all required assignment queries
+- Determine tables needed for each query
+- Create SQL query plan document
+
+Person 5 – Documentation (Sassy)
+- Create GitHub repository
+- Add collaborators
+- Create folder structure
+- Create README draft
+- Create Meeting Agenda 1
+- Write Meeting Minutes 1
+- Create Action Plan
+
+---
+
+Week 2 (23 Nov – 29 Nov): Build Database and Import Data
+
+Person 1 – Database Design (Maizy)
+- Finalise draw.io ERD
+- Create flowchart
+- Create pseudocode
+- Upload planning documents
+
+Person 2 – Database Development (Nsuhoridem)
+- Create MySQL database
+- Create all tables
+- Apply primary keys
+- Apply foreign keys
+- Apply constraints
+
+Person 3 – Data Management (Dana)
+- Import Hospitals CSV
+- Import Doctors CSV
+- Import Patients CSV
+- Import Medications CSV
+- Import Diseases CSV
+- Import all remaining CSVs
+
+Person 4 – SQL Queries (Anuja)
+- Begin:
+  - Doctors at hospital
+  - Prescriptions by patient
+  - Prescriptions by doctor
+  - Ordered prescriptions query
+
+Person 5 – Documentation (Sassy)
+- Meeting Agenda 2
+- Meeting Minutes 2
+- Update Action Plan
+- Upload all files to GitHub
+- Update README
+- Verify everybody commits work
+- Organise portfolio folder
+
+---
+
+Week 3 (30 Nov – 6 Dec): Complete Queries & Testing
+
+Person 1 – Database Design (Maizy)
+- Review all relationships
+- Verify all foreign key links work
+- Help troubleshoot database issues
+
+Person 2 – Database Development (Nsuhoridem)
+- Validate imports
+- Fix broken relationships
+- Check integrity constraints
+- Export test backups
+
+Person 3 – Data Management (Dana)
+- Run validation checks:
+  - Every hospital has doctor(s)
+  - Every patient has doctor
+  - All appointments valid
+  - All prescriptions valid
+  - No orphan records
+
+Person 4 – SQL Queries (Anuja)
+- Complete all remaining queries:
+  - Add patient
+  - Update patient address
+  - Patients at hospital
+  - Specialists for disease
+  - Appointments for patient
+  - Appointments for doctor
+  - Doctor with most prescriptions
+  - Largest hospital query
+  - Emergency services query
+  - All remaining advanced queries
+
+Person 5 – Documentation (Sassy)
+- Meeting Agenda 3
+- Meeting Minutes 3
+- Update Action Plan
+- Create Milestones Document
+- Upload documents to GitHub
+
+---
+
+Week 4 (7 Dec – 9 Dec): Final Review
+
+Person 1 – Design Review (Maizy)
+- Verify ERD matches database exactly
+- Verify all relationships documented
+- Produce final ERD export
+
+Person 2 – Database Review (Nsuhoridem)
+- Check all tables
+- Check all constraints
+- Export final SQL file
+- Create schema backup
+
+Person 3 – Data Review (Dana)
+- Verify row counts:
+  - 40 Hospitals
+  - 100 Doctors
+  - 600 Patients
+  - 500 Prescriptions
+  - 300 Appointments
+  - 300 Lab Results
+- Check for duplicate records
+
+Person 4 – Query Testing (Anuja)
+- Test every query:
+  - Execute query
+  - Verify results
+  - Save screenshots if required
+  - Fix errors
+
+Person 5 – Documentation (Sassy)
+- Final README
+- GitHub Pages website
+- Add screenshots
+- Add ERD image
+- Add project overview
+
+---
+
+Submission Day (10 Dec):
+
+PERSON    NAME        CHECK
+Person 1  Maizy       Verify planning documents included
+Person 2  Nsuhoridem  Verify SQL export included
+Person 3  Dana        Verify CSVs included
+Person 4  Anuja       Verify all queries included
+Person 5  Sassy       ZIP repository, complete AI declaration, submit the ZIP, GitHub URL and AI declaration

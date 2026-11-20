@@ -1,0 +1,11 @@
+TABLE               COLUMNS
+Hospitals           hospital_id, hospital_name, address, number_of_beds, hospital_type, accreditation_date, emergency_services
+Doctors             doctor_id, first_name, last_name, date_of_birth, address, specialty, hospital_id
+Patients            patient_id, first_name, last_name, date_of_birth, address, doctor_id
+Medications         medication_id, medication_name, dosage
+Prescriptions       prescription_id, patient_id, doctor_id, medication_id, prescription_date
+Diseases            disease_id, disease_name
+Disease Medication  disease_id, medication_id
+Disease Specialist  disease_id, doctor_id
+Appointments        appointment_id, patient_id, doctor_id, appointment_date, status
+Lab Results         lab_result_id, patient_id, doctor_id, test_type, result_value, test_date
