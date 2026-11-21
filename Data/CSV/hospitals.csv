@@ -1,0 +1,41 @@
+hospital_id,hospital_name,address,number_of_beds,hospital_type,accreditation_date,emergency_services
+1,Northmere Royal Infirmary,"1 Infirmary Way, Northmere, NM1 4AB",940,Teaching,2012-03-14,Yes
+2,St Aldric's General Hospital,"22 Priory Road, Aldwick Green, AG2 7LQ",520,General,2015-06-22,Yes
+3,Wexcombe Community Hospital,"5 Mill Lane, Wexcombe, WX3 9PD",140,Community,2018-09-05,No
+4,Harrowfield Specialist Heart Centre,"90 Cardiac Drive, Harrowfield, HF5 1TZ",220,Specialist,2019-02-11,No
+5,Brackenridge University Hospital,"300 University Avenue, Brackenridge, BR6 3NE",870,Teaching,2011-11-30,Yes
+6,Thornbury Vale General Hospital,"14 Vale Street, Thornbury Vale, TV4 8HS",460,General,2016-04-19,Yes
+7,Marlowe Cross Community Hospital,"3 Cross Road, Marlowe Cross, MC1 2YU",118,Community,2020-07-08,No
+8,Kingsmere Children's Hospital,"48 Kingsmere Parade, Kingsmere, KM7 5RB",310,Specialist,2014-10-02,Yes
+9,Ashworth Park Hospital,"67 Park Terrace, Ashworth, AP9 4GF",380,General,2013-05-16,Yes
+10,Fenwick Bay Community Hospital,"8 Harbour View, Fenwick Bay, FB2 6WA",105,Community,2022-01-27,No
+11,Ravensholt Royal Hospital,"2 Royal Crescent, Ravensholt, RH8 1JN",780,Teaching,2010-08-12,Yes
+12,Ellesby District General Hospital,"115 Station Road, Ellesby, EL3 7DX",610,General,2017-03-03,Yes
+13,Cobbleton Community Hospital,"19 Church Lane, Cobbleton, CB4 2MT",160,Community,2021-05-20,Yes
+14,Oakhampton Cancer Centre,"7 Hawthorn Close, Oakhampton, OK5 9QL",240,Specialist,2018-12-14,No
+15,Stonebridge General Hospital,"41 Bridge Street, Stonebridge, SB6 4EP",540,General,2012-09-25,Yes
+16,Dunmore St Columba Hospital,"26 Abbey Road, Dunmore, DM2 8UH",430,General,2019-06-30,Yes
+17,Lindenhurst Community Hospital,"12 Linden Way, Lindenhurst, LH1 3BZ",130,Community,2023-02-09,No
+18,Pennington Eye & Ear Hospital,"33 Vision Row, Pennington, PN7 6CS",150,Specialist,2015-11-18,No
+19,Westerleigh University Hospital,"500 Campus Road, Westerleigh, WL3 2AR",990,Teaching,2010-04-07,Yes
+20,Carrowdale General Hospital,"72 Moorland Avenue, Carrowdale, CD8 5NY",690,General,2014-07-23,Yes
+21,Hollinsworth Community Hospital,"9 Elm Grove, Hollinsworth, HW4 1KF",190,Community,2016-10-13,Yes
+22,Alderbrook Orthopaedic Hospital,"58 Alder Street, Alderbrook, AB6 7TQ",200,Specialist,2020-03-26,No
+23,Saltmarsh Royal Infirmary,"4 Quayside, Saltmarsh, SM2 9LD",570,General,2013-01-31,Yes
+24,Greystoke Vale Teaching Hospital,"210 Greystoke Road, Greystoke Vale, GV5 4HW",820,Teaching,2011-06-17,Yes
+25,Meadowfield Community Hospital,"16 Meadow Lane, Meadowfield, MF3 8SA",112,Community,2024-04-15,No
+26,Tarnbury General Hospital,"85 High Street, Tarnbury, TB1 6PJ",480,General,2017-08-29,Yes
+27,Queen Eleanor Maternity Hospital,"1 Eleanor Place, Kingsmere, KM2 3XD",280,Specialist,2012-12-05,No
+28,Whitcombe Community Hospital,"21 Orchard Road, Whitcombe, WC9 2RE",145,Community,2019-09-12,No
+29,Beaumont Fields General Hospital,"130 Fields Road, Beaumont Fields, BF4 7GN",650,General,2015-02-24,Yes
+30,Ironbridge Central Teaching Hospital,"1 Central Square, Ironbridge, IB1 5UT",910,Teaching,2010-10-21,Yes
+31,Larkspur Mental Health Hospital,"44 Larkspur Drive, Larkspur, LK6 8FB",350,Specialist,2016-05-09,No
+32,Rosedale Community Hospital,"6 Rose Lane, Rosedale, RD2 4NH",175,Community,2021-11-03,Yes
+33,Eastgrove General Hospital,"99 Eastgrove Avenue, Eastgrove, EG7 1CY",400,General,2018-03-21,Yes
+34,Cheswick Moor Hospital,"27 Moor Road, Cheswick, CM3 9WB",330,General,2022-08-17,No
+35,St Winifred's Teaching Hospital,"15 Winifred Street, Wexcombe, WX1 6JP",760,Teaching,2013-09-10,Yes
+36,Havenbury Community Hospital,"11 Haven Close, Havenbury, HB5 3TL",125,Community,2023-10-24,No
+37,Kelsworth Neurological Centre,"62 Synapse Way, Kelsworth, KW4 2EA",180,Specialist,2017-01-18,No
+38,Pemberton Heath General Hospital,"78 Heath Road, Pemberton Heath, PH8 5QS",590,General,2014-04-01,Yes
+39,Yarrowby Community Hospital,"3 Yarrow Street, Yarrowby, YB2 7DN",155,Community,2020-12-08,Yes
+40,Trevanion Royal Teaching Hospital,"250 Trevanion Hill, Trevanion, TR9 1LH",850,Teaching,2011-02-28,Yes

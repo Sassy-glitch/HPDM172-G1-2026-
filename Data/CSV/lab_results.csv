@@ -1,0 +1,301 @@
+lab_result_id,patient_id,doctor_id,test_type,result_value,test_date
+1,204,62,Kidney Function Test,59,2024-11-12
+2,537,34,Liver Function Test,75,2024-11-13
+3,196,44,Blood Glucose,5.9,2024-11-14
+4,114,57,Blood Glucose,4.9,2024-12-02
+5,171,26,Liver Function Test,19,2024-12-02
+6,478,58,Blood Glucose,6.3,2024-12-02
+7,7,12,Blood Glucose,5.4,2024-12-03
+8,486,7,Liver Function Test,52,2024-12-04
+9,88,65,Liver Function Test,42,2024-12-06
+10,192,69,Blood Glucose,5.7,2024-12-10
+11,245,36,Kidney Function Test,108,2024-12-10
+12,533,30,Blood Glucose,6.7,2024-12-18
+13,136,35,Liver Function Test,16,2024-12-23
+14,510,82,Liver Function Test,27,2024-12-25
+15,74,8,Blood Glucose,6.5,2024-12-26
+16,482,82,Cholesterol,4.6,2024-12-26
+17,471,7,Full Blood Count,134,2024-12-30
+18,190,14,Full Blood Count,120,2025-01-01
+19,451,7,Liver Function Test,56,2025-01-01
+20,393,72,Blood Glucose,5.0,2025-01-03
+21,381,1,Liver Function Test,17,2025-01-07
+22,337,87,Full Blood Count,120,2025-01-13
+23,163,50,Blood Glucose,5.5,2025-01-17
+24,253,57,Full Blood Count,146,2025-01-22
+25,121,30,Kidney Function Test,29,2025-01-23
+26,228,70,Full Blood Count,125,2025-01-29
+27,143,11,Full Blood Count,151,2025-01-31
+28,238,18,Full Blood Count,145,2025-02-03
+29,322,83,Full Blood Count,146,2025-02-05
+30,237,38,Liver Function Test,30,2025-02-10
+31,57,42,Cholesterol,4.4,2025-02-13
+32,330,17,Liver Function Test,18,2025-02-13
+33,375,93,Full Blood Count,162,2025-02-14
+34,532,80,Full Blood Count,143,2025-02-14
+35,67,47,Full Blood Count,160,2025-02-19
+36,200,40,Full Blood Count,124,2025-02-19
+37,209,75,Cholesterol,5.2,2025-02-20
+38,219,19,Kidney Function Test,73,2025-02-21
+39,435,32,HbA1c,46,2025-02-26
+40,171,26,Kidney Function Test,72,2025-03-03
+41,355,89,Cholesterol,4.0,2025-03-03
+42,380,42,Full Blood Count,133,2025-03-04
+43,80,43,Kidney Function Test,93,2025-03-05
+44,125,27,Blood Glucose,7.6,2025-03-06
+45,202,5,Cholesterol,4.0,2025-03-13
+46,39,30,Kidney Function Test,93,2025-03-18
+47,598,97,Liver Function Test,32,2025-03-19
+48,358,12,Blood Glucose,3.9,2025-03-24
+49,115,24,Blood Glucose,6.0,2025-03-28
+50,543,9,Kidney Function Test,71,2025-03-28
+51,161,37,Liver Function Test,27,2025-04-04
+52,148,46,Kidney Function Test,109,2025-04-11
+53,360,66,Liver Function Test,23,2025-04-11
+54,490,35,Blood Glucose,6.8,2025-04-11
+55,448,49,Cholesterol,4.0,2025-04-15
+56,497,48,Kidney Function Test,119,2025-04-15
+57,196,44,Blood Glucose,6.3,2025-05-01
+58,410,81,Kidney Function Test,65,2025-05-01
+59,389,53,Kidney Function Test,46,2025-05-02
+60,459,67,Blood Glucose,5.1,2025-05-08
+61,476,60,Full Blood Count,145,2025-05-09
+62,257,68,Kidney Function Test,125,2025-05-12
+63,22,22,Blood Glucose,4.3,2025-05-13
+64,513,11,Liver Function Test,31,2025-05-15
+65,345,34,Full Blood Count,146,2025-05-19
+66,434,7,Kidney Function Test,76,2025-05-19
+67,426,36,Kidney Function Test,102,2025-05-20
+68,401,25,Kidney Function Test,59,2025-05-22
+69,385,66,Blood Glucose,4.8,2025-05-23
+70,37,38,HbA1c,34,2025-05-27
+71,288,100,Liver Function Test,11,2025-05-28
+72,306,54,Kidney Function Test,70,2025-05-29
+73,354,14,Full Blood Count,165,2025-05-29
+74,50,9,Blood Glucose,6.2,2025-06-06
+75,78,13,Full Blood Count,143,2025-06-10
+76,2,9,Liver Function Test,50,2025-06-16
+77,146,26,Full Blood Count,124,2025-06-17
+78,395,44,HbA1c,52,2025-06-18
+79,569,53,Kidney Function Test,67,2025-06-18
+80,328,86,Blood Glucose,6.4,2025-06-19
+81,473,28,Liver Function Test,53,2025-06-20
+82,493,20,Full Blood Count,138,2025-06-23
+83,205,58,Full Blood Count,132,2025-06-24
+84,279,44,Cholesterol,5.0,2025-06-24
+85,39,30,Kidney Function Test,93,2025-06-25
+86,444,72,Full Blood Count,158,2025-06-26
+87,91,25,Full Blood Count,138,2025-06-27
+88,316,90,Liver Function Test,46,2025-06-30
+89,499,75,Cholesterol,3.1,2025-06-30
+90,526,50,Kidney Function Test,54,2025-07-01
+91,555,23,Blood Glucose,6.1,2025-07-01
+92,119,24,Full Blood Count,129,2025-07-04
+93,189,93,Liver Function Test,95,2025-07-04
+94,119,24,Liver Function Test,17,2025-07-09
+95,307,91,Cholesterol,4.2,2025-07-14
+96,144,29,Liver Function Test,14,2025-07-16
+97,589,91,Full Blood Count,159,2025-07-17
+98,382,2,Liver Function Test,30,2025-07-23
+99,344,88,Liver Function Test,56,2025-07-25
+100,494,16,Blood Glucose,5.0,2025-08-01
+101,254,96,HbA1c,34,2025-08-04
+102,468,77,Full Blood Count,115,2025-08-04
+103,402,58,Full Blood Count,133,2025-08-12
+104,530,76,Liver Function Test,32,2025-08-14
+105,564,67,Liver Function Test,20,2025-08-15
+106,442,77,Kidney Function Test,111,2025-08-19
+107,530,76,Full Blood Count,120,2025-08-19
+108,400,30,Full Blood Count,113,2025-08-21
+109,453,92,Kidney Function Test,70,2025-08-22
+110,69,85,Full Blood Count,123,2025-08-25
+111,500,57,Blood Glucose,5.2,2025-08-25
+112,548,97,Kidney Function Test,83,2025-08-25
+113,545,13,Liver Function Test,47,2025-08-26
+114,578,85,Liver Function Test,22,2025-08-29
+115,372,34,Blood Glucose,6.1,2025-09-03
+116,59,53,Kidney Function Test,51,2025-09-05
+117,346,79,Blood Glucose,7.3,2025-09-12
+118,312,43,Blood Glucose,7.8,2025-09-15
+119,253,57,Cholesterol,4.7,2025-09-16
+120,438,83,Kidney Function Test,99,2025-09-18
+121,467,59,Full Blood Count,147,2025-09-18
+122,281,31,Kidney Function Test,72,2025-09-19
+123,334,63,Cholesterol,5.4,2025-09-19
+124,251,47,Full Blood Count,120,2025-09-22
+125,433,31,Full Blood Count,139,2025-09-23
+126,1,84,Full Blood Count,144,2025-09-24
+127,8,92,Kidney Function Test,86,2025-09-24
+128,216,1,Cholesterol,6.4,2025-09-26
+129,226,49,Kidney Function Test,74,2025-09-26
+130,332,61,Liver Function Test,54,2025-09-26
+131,354,14,Full Blood Count,149,2025-09-26
+132,111,78,Full Blood Count,124,2025-10-01
+133,371,12,Blood Glucose,7.4,2025-10-02
+134,185,95,Full Blood Count,121,2025-10-03
+135,544,37,Kidney Function Test,114,2025-10-06
+136,477,19,Kidney Function Test,88,2025-10-08
+137,204,62,Cholesterol,5.0,2025-10-09
+138,5,95,Kidney Function Test,125,2025-10-14
+139,398,21,Cholesterol,5.8,2025-10-14
+140,248,4,Full Blood Count,146,2025-10-15
+141,69,85,Blood Glucose,6.5,2025-10-17
+142,468,77,Kidney Function Test,88,2025-10-17
+143,185,95,Full Blood Count,129,2025-10-20
+144,487,97,Kidney Function Test,92,2025-10-29
+145,111,78,Full Blood Count,144,2025-10-30
+146,271,62,Cholesterol,5.2,2025-11-10
+147,507,50,Blood Glucose,4.7,2025-11-12
+148,499,75,Cholesterol,5.6,2025-11-18
+149,118,80,Full Blood Count,141,2025-11-19
+150,131,89,Full Blood Count,132,2025-11-20
+151,139,78,Kidney Function Test,70,2025-11-20
+152,295,69,Cholesterol,5.0,2025-11-21
+153,53,44,HbA1c,24,2025-12-05
+154,278,1,Cholesterol,4.5,2025-12-05
+155,596,64,Liver Function Test,17,2025-12-05
+156,283,28,Liver Function Test,45,2025-12-09
+157,92,88,Full Blood Count,128,2025-12-15
+158,233,80,Full Blood Count,165,2025-12-18
+159,425,99,Liver Function Test,72,2025-12-18
+160,574,28,Kidney Function Test,61,2025-12-18
+161,130,55,Full Blood Count,149,2025-12-22
+162,242,7,Kidney Function Test,112,2025-12-23
+163,284,63,HbA1c,54,2025-12-29
+164,333,25,Liver Function Test,17,2025-12-30
+165,402,58,Full Blood Count,141,2025-12-30
+166,488,7,Blood Glucose,6.6,2026-01-01
+167,543,9,Kidney Function Test,71,2026-01-01
+168,540,54,Liver Function Test,26,2026-01-02
+169,582,69,Kidney Function Test,69,2026-01-02
+170,20,3,Blood Glucose,6.8,2026-01-05
+171,257,68,Kidney Function Test,108,2026-01-07
+172,534,66,Liver Function Test,35,2026-01-07
+173,343,35,Kidney Function Test,57,2026-01-12
+174,223,96,Kidney Function Test,63,2026-01-14
+175,161,37,Liver Function Test,38,2026-01-16
+176,374,5,Kidney Function Test,61,2026-01-19
+177,68,18,Blood Glucose,7.3,2026-01-22
+178,297,50,Blood Glucose,4.1,2026-01-22
+179,531,33,Liver Function Test,43,2026-01-26
+180,588,94,Liver Function Test,27,2026-01-27
+181,525,55,Cholesterol,4.7,2026-01-29
+182,403,70,Liver Function Test,46,2026-01-30
+183,21,82,Liver Function Test,14,2026-02-03
+184,93,10,Blood Glucose,11.6,2026-02-05
+185,522,60,Liver Function Test,28,2026-02-05
+186,426,36,Kidney Function Test,100,2026-02-09
+187,506,14,Full Blood Count,131,2026-02-10
+188,154,19,Kidney Function Test,52,2026-02-13
+189,228,70,Liver Function Test,24,2026-02-13
+190,303,46,Liver Function Test,28,2026-02-19
+191,528,48,Full Blood Count,168,2026-02-19
+192,299,85,Blood Glucose,5.4,2026-02-20
+193,376,63,HbA1c,26,2026-02-23
+194,15,26,Full Blood Count,128,2026-02-25
+195,512,4,Full Blood Count,157,2026-02-25
+196,41,99,Kidney Function Test,120,2026-03-02
+197,46,40,Full Blood Count,127,2026-03-02
+198,255,91,Blood Glucose,3.6,2026-03-02
+199,368,49,Full Blood Count,130,2026-03-09
+200,298,30,Full Blood Count,139,2026-03-10
+201,134,6,Full Blood Count,151,2026-03-12
+202,129,21,Cholesterol,6.6,2026-03-13
+203,197,74,Liver Function Test,27,2026-03-24
+204,500,57,Blood Glucose,6.7,2026-03-24
+205,520,8,Full Blood Count,125,2026-03-24
+206,246,21,Liver Function Test,23,2026-03-27
+207,542,49,Kidney Function Test,78,2026-03-27
+208,258,65,Full Blood Count,129,2026-03-30
+209,336,63,HbA1c,45,2026-03-31
+210,489,70,Liver Function Test,30,2026-04-01
+211,224,64,Full Blood Count,152,2026-04-09
+212,450,46,Full Blood Count,136,2026-04-10
+213,362,14,Blood Glucose,6.7,2026-04-21
+214,379,34,Cholesterol,4.1,2026-04-21
+215,397,79,Liver Function Test,36,2026-04-24
+216,124,58,Full Blood Count,133,2026-04-27
+217,128,6,Full Blood Count,132,2026-05-06
+218,35,86,Liver Function Test,21,2026-05-08
+219,496,59,Liver Function Test,19,2026-05-11
+220,99,24,Full Blood Count,134,2026-05-12
+221,229,16,Blood Glucose,4.6,2026-05-15
+222,248,4,Full Blood Count,124,2026-05-18
+223,557,75,Cholesterol,3.9,2026-05-19
+224,169,6,Blood Glucose,6.3,2026-05-22
+225,406,65,Kidney Function Test,75,2026-05-27
+226,437,84,Full Blood Count,126,2026-05-27
+227,412,80,Full Blood Count,138,2026-06-03
+228,417,80,Full Blood Count,124,2026-06-05
+229,120,89,Cholesterol,7.1,2026-06-08
+230,234,5,Blood Glucose,3.0,2026-06-08
+231,336,63,Cholesterol,3.2,2026-06-10
+232,548,97,Full Blood Count,131,2026-06-12
+233,317,35,Full Blood Count,125,2026-06-17
+234,549,38,Blood Glucose,5.9,2026-06-19
+235,132,79,Liver Function Test,37,2026-06-24
+236,378,22,HbA1c,40,2026-06-25
+237,571,12,Cholesterol,5.6,2026-06-30
+238,230,6,Full Blood Count,142,2026-07-01
+239,1,84,Liver Function Test,10,2026-07-03
+240,550,25,Cholesterol,6.6,2026-07-06
+241,385,66,Kidney Function Test,81,2026-07-13
+242,126,66,Liver Function Test,53,2026-07-14
+243,551,61,Full Blood Count,137,2026-07-15
+244,33,73,Kidney Function Test,83,2026-07-17
+245,568,83,Kidney Function Test,125,2026-07-17
+246,262,53,Kidney Function Test,47,2026-07-20
+247,572,46,Kidney Function Test,64,2026-07-21
+248,137,68,Kidney Function Test,56,2026-07-22
+249,476,60,Blood Glucose,4.3,2026-07-23
+250,280,43,Liver Function Test,44,2026-07-27
+251,262,53,Full Blood Count,135,2026-07-28
+252,412,80,Liver Function Test,18,2026-07-30
+253,17,91,Full Blood Count,114,2026-07-31
+254,112,4,Cholesterol,3.8,2026-07-31
+255,478,58,Kidney Function Test,96,2026-07-31
+256,226,49,Blood Glucose,4.8,2026-08-04
+257,106,57,Full Blood Count,146,2026-08-05
+258,473,28,Full Blood Count,124,2026-08-05
+259,440,43,Liver Function Test,37,2026-08-06
+260,50,9,Liver Function Test,24,2026-08-10
+261,278,1,Cholesterol,4.6,2026-08-13
+262,361,47,Liver Function Test,103,2026-08-13
+263,458,16,Full Blood Count,163,2026-08-14
+264,112,4,Liver Function Test,13,2026-08-17
+265,190,14,Full Blood Count,124,2026-08-18
+266,343,35,Full Blood Count,127,2026-08-28
+267,247,41,Liver Function Test,51,2026-09-02
+268,255,91,Liver Function Test,24,2026-09-02
+269,60,78,Blood Glucose,4.3,2026-09-03
+270,139,78,Full Blood Count,140,2026-09-03
+271,191,15,Blood Glucose,4.8,2026-09-07
+272,379,34,Full Blood Count,122,2026-09-11
+273,416,90,Liver Function Test,29,2026-09-14
+274,307,91,Full Blood Count,146,2026-09-16
+275,128,6,Kidney Function Test,108,2026-09-17
+276,532,80,Full Blood Count,169,2026-09-18
+277,538,77,Full Blood Count,126,2026-09-18
+278,41,99,Full Blood Count,133,2026-09-21
+279,397,79,Liver Function Test,35,2026-09-23
+280,173,55,Full Blood Count,127,2026-10-05
+281,280,43,Liver Function Test,35,2026-10-05
+282,365,17,Liver Function Test,19,2026-10-05
+283,78,13,Full Blood Count,162,2026-10-07
+284,557,75,Cholesterol,4.8,2026-10-08
+285,363,36,Blood Glucose,5.1,2026-10-09
+286,439,87,Kidney Function Test,94,2026-10-09
+287,195,100,Kidney Function Test,72,2026-10-13
+288,73,88,Blood Glucose,5.8,2026-10-14
+289,292,48,Liver Function Test,49,2026-10-15
+290,546,24,Kidney Function Test,106,2026-10-21
+291,106,57,Full Blood Count,147,2026-10-22
+292,224,64,Full Blood Count,122,2026-10-22
+293,229,16,Blood Glucose,5.0,2026-10-22
+294,498,41,Full Blood Count,137,2026-10-22
+295,189,93,Full Blood Count,141,2026-10-29
+296,329,76,Full Blood Count,125,2026-11-02
+297,370,2,Kidney Function Test,101,2026-11-04
+298,35,86,Blood Glucose,5.1,2026-11-05
+299,89,87,Full Blood Count,131,2026-11-05
+300,28,87,Liver Function Test,34,2026-11-09
