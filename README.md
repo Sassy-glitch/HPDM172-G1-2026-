@@ -88,7 +88,7 @@ This project is coursework so the repository is no longer active; no contributio
 1. Anuja Alias
 2. Dana Basal
 3. Maizy Carey 
-4. Nsuhoridem Aman Ekong
+4. Nsuhoridem Ekong
 5. Sassy Drake
 
 (See Group Admin for Task Assignment)
