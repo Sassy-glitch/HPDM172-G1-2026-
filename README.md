@@ -38,7 +38,7 @@ Entity–relationship diagram (ERD) of a healthcare database showing relationshi
 | hospitals | Details of each hospital (beds, type, accreditation, emergency services) | 40 |
 | doctors | Doctors and the hospital each works at | 100 |
 | patients | Patients and their registered doctor | 600 |
-| medications | Available medications | 30+ |
+| medications | Available medications | 30 |
 | prescriptions | Medication prescribed to a patient by a doctor | 500 |
 | diseases | List of diseases | |
 | disease_medication | Which medication treats which disease | |
