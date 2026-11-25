@@ -23,7 +23,7 @@ Built for HPDM172 Coursework by Team 1.
 | `Data` | CSV files used for import |
 | `SQL Tables` | Table creation scripts and the 19 query files |
 | `SQL Code` | Full MySQL export (mysqldump) |
-| `Group Admin` | Meeting agendas (x2), minutes (x2), action plan |
+| `Group Admin` | Meeting agendas, minutes, action plan |
 | `Gen AI` | How generative AI was used in this assignment |
 | `README.md` | GitHub Pages content |
 
