@@ -28,7 +28,9 @@ Built for HPDM172 Coursework by Team 1.
 | `README.md` | GitHub Pages content |
 
 ## Database Overview:
-- Brief description of ERD, with the ERD image embedded -
+Entity–relationship diagram (ERD) of a healthcare database showing relationships between hospitals, doctors, patients, appointments, prescriptions, medications, diseases, and laboratory results.
+<img width="1751" height="1348" alt="computational ERD" src="https://github.com/user-attachments/assets/5261d8eb-f09d-4caa-807a-f40b561b69fb" />
+
 
 ### Information Included:
 | Table | Purpose | Rows |
@@ -61,9 +63,9 @@ Appointments and lab results each belong to one patient and are requested by one
 
 ### Naming Conventions:
 
-Table names: lowercase, plural, underscores between words.
+Table Names: lowercase, plural, underscores between words.
 
-Column names: lowercase, plural, underscores between words.
+Column Names: lowercase, plural, underscores between words.
 
 - Primary keys: ?? -
 - 
