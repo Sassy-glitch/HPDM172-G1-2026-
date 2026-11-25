@@ -30,7 +30,7 @@ Built for HPDM172 Coursework by Team 1.
 ## Database Overview:
 - Brief description of ERD, with the ERD image embedded -
 
-Information Included:
+### Information Included:
 | Table | Purpose | Rows |
 |---|---|---|
 | hospitals | Details of each hospital (beds, type, accreditation, emergency services) | 40 |
@@ -45,22 +45,32 @@ Information Included:
 | lab_results | Lab test results for patients | 300 |
 
   
-Key Relationships:
+### Key Relationships:
 
-One hospital has many doctors; each doctor works at one hospital
-One doctor has many patients; each patient is registered to one doctor
-A prescription is for one patient, one doctor and one medication
-Diseases and medications are many-to-many, linked through diseases_medication
-Diseases and doctors are many-to-many (specialists), linked through disease_specialist
+One hospital has many doctors; each doctor works at one hospital.
+
+One doctor has many patients; each patient is registered to one doctor.
+
+A prescription is for one patient, one doctor and one medication.
+
+Diseases and medications are many-to-many, linked through diseases_medication.
+
+Diseases and doctors are many-to-many (specialists), linked through disease_specialist.
+
 Appointments and lab results each belong to one patient and are requested by one doctor.
 
-Naming Conventions:
+### Naming Conventions:
 
-Table names: lowercase, plural, underscores between words
-Column names: lowercase, plural, underscores between words
+Table names: lowercase, plural, underscores between words.
+
+Column names: lowercase, plural, underscores between words.
+
 - Primary keys: ?? -
+- 
 - Foreign keys: ?? -
-Link tables: the two table names joined by an underscore
+- 
+Link tables: the two table names joined by an underscore.
+
 - Query files: numbered with a clear name -
 
 ## How To Use: 
