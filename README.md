@@ -14,7 +14,7 @@ A MySQL hospital database covering:
 - Appointments
 - Lab Results
 
-Built for HPDM172 Coursework by Team 1. 
+Built for HPDM172 Coursework by Group 1. 
 
 ## Contents: 
 | Folder | Description |
