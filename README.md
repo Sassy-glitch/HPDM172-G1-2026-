@@ -13,6 +13,7 @@ A MySQL hospital database covering:
 - Diseases
 - Appointments
 - Lab Results
+
 Built for HPDM172 Coursework by Team 1. 
 
 ## Contents: 
@@ -63,11 +64,11 @@ Link tables: the two table names joined by an underscore
 - Query files: numbered with a clear name -
 
 ## How To Use: 
-1. Clone the repo.
-2. Create the database
-3. Run a query
+1. Clone the repository
+3. Create the database
+4. Run a query
    
-As this project is coursework so the repository is no longer active; no contribution or upload instructions are provided.
+This project is coursework so the repository is no longer active; no contribution or upload instructions are provided.
 
 ## SQL Queries: 
 
