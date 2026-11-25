@@ -6,32 +6,32 @@ DELIMITER $$
  DROP PROCEDURE IF EXISTS list_doctors_at_hospital$$
    CREATE PROCEDURE list_doctors_at_hospital(IN p_hospital_name VARCHAR(100))
    BEGIN
-         SELECT d.DoctorID,
-                CONCAT(d.FirstName,' ', d.LastName) AS DoctorName,
+         SELECT d.doctor_id,
+                CONCAT(d.first_name,' ', d.last_name) AS doctor_name,
                 d.Specialty,
-                h.HospitalName
+                h.hospital_name
          FROM doctors d
-         JOIN hospitals h ON h.HospitalID = d.HospitalID
-         WHERE h.HospitalName = p_hospital_name
-         ORDER BY d.LastName,d.FirstName;
+         JOIN hospitals h ON h.hospital_id = d.hospital_id
+         WHERE h.hospital_name = p_hospital_name
+         ORDER BY d.last_name,d.first_name;
    END$$
 
 -- All Prescriptions for a particular patient,ordered by date
 DROP PROCEDURE IF EXISTS list_prescriptions_for_patient$$
    CREATE PROCEDURE list_prescriptions_for_patient(IN p_patient_id INT)
    BEGIN
-         SELECT pr.PrescriptionID,
-                pr.PrescriptionDate,
-                CONCAT(p.FirstName,' ',p.LastName) AS PatientName,
-                m.MedicationName,
+         SELECT pr.prescription_id,
+                pr.prescription_date,
+                CONCAT(p.first_name,' ',p.last_name) AS patient_name,
+                m.medication_name,
                 m.Dosage,
-                CONCAT(d.FirstName,' ',d.LastName) AS DoctorName
+                CONCAT(d.first_name,' ',d.last_name) AS doctor_name
          FROM prescriptions pr
-         JOIN patients p ON p.PatientID = pr.PatientID
-         JOIN medications m ON m.MedicationID = pr.MedicationID
-         JOIN doctors d ON d.DoctorID = pr.DoctorID
-         WHERE pr.PatientID = p_patient_id
-         ORDER BY pr.PrescriptionDate;
+         JOIN patients p ON p.patient_id = pr.patient_id
+         JOIN medications m ON m.medication_id = pr.medication_id
+         JOIN doctors d ON d.doctor_id = pr.doctor_id
+         WHERE pr.patient_id = p_patient_id
+         ORDER BY pr.prescription_date;
   END$$
 
 -- All prescriptions by particular Doctor
@@ -39,35 +39,35 @@ DROP PROCEDURE IF EXISTS list_prescriptions_for_patient$$
 DROP PROCEDURE IF EXISTS list_prescriptions_by_doctor$$
    CREATE PROCEDURE  list_prescriptions_by_doctor(IN p_doctor_id INT)
    BEGIN
-         SELECT pr.PrescriptionID,
-                pr.PrescriptionDate,
-                CONCAT(d.FirstName,' ',d.LastName) AS DoctorName,
-                CONCAT(p.FirstName,' ',p.LastName) AS PatientName,
-                m.MedicationName,
+         SELECT pr.prescription_id,
+                pr.prescription_date,
+                CONCAT(d.first_name,' ',d.last_name) AS doctor_name,
+                CONCAT(p.first_name,' ',p.last_name) AS patient_name,
+                m.medication_name,
                 m.Dosage
          FROM prescriptions pr
-         JOIN doctors d ON d.DoctorID = pr.DoctorID
-         JOIN patients p ON p.PatientID = pr.PatientID
-         JOIN medications m ON m.MedicationID = pr.MedicationID
-         WHERE pr.DoctorID = p_doctor_id
-         ORDER BY pr.PrescriptionDate;
+         JOIN doctors d ON d.doctor_id = pr.doctor_id
+         JOIN patients p ON p.patient_id = pr.patient_id
+         JOIN medications m ON m.medication_id = pr.medication_id
+         WHERE pr.doctor_id = p_doctor_id
+         ORDER BY pr.prescription_date;
    END$$
 
  DELIMITER ;
  -- All prescriptions orderd by patient name alphabetically
    CREATE OR REPLACE VIEW list_all_prescriptions_by_patient_name AS
-   SELECT pr.PrescriptionID,
-          p.LastName AS PatientLastName,
-          p.FirstName AS PatientFirstName,
-          m.MedicationName,
+   SELECT pr.prescription_id,
+          p.last_name AS patient_last_name,
+          p.first_name AS patient_first_name,
+          m.medication_name,
           m.Dosage,
-          CONCAT(d.FirstName,' ',d.LastName) AS DoctorName,
-          pr.PrescriptionDate
+          CONCAT(d.first_name,' ',d.last_name) AS doctor_name,
+          pr.prescription_date
    FROM prescriptions pr
-   JOIN patients p ON p.PatientID = pr.PatientID
-   JOIN medications m ON m.MedicationID = pr.MedicationID
-   JOIN doctors d ON d.DoctorID = pr.DoctorID
-   ORDER BY p.LastName,p.FirstName,pr.PrescriptionDate;
+   JOIN patients p ON p.patient_id = pr.patient_id
+   JOIN medications m ON m.medication_id = pr.medication_id
+   JOIN doctors d ON d.doctor_id = pr.doctor_id
+   ORDER BY p.last_name,p.first_name,pr.prescription_date;
  
 DELIMITER $$
 -- Add a new patient
@@ -79,13 +79,13 @@ DELIMITER $$
        IN p_address VARCHAR(255),
        IN p_doctor_id INT)
    BEGIN
-       IF NOT EXISTS(SELECT 1 FROM doctors WHERE DoctorID = p_doctor_id) THEN
+       IF NOT EXISTS(SELECT 1 FROM doctors WHERE doctor_id = p_doctor_id) THEN
             SIGNAL SQLSTATE '45000'
                 SET MESSAGE_TEXT = 'Doctor does not exist - patient not added';
        END IF;
-       INSERT INTO patients (FirstName, LastName, DateOfBirth, Address, DoctorID)
+       INSERT INTO patients (first_name, last_name, date_of_birth, Address, doctor_id)
        VALUES (p_first_name, p_last_name, p_dob, p_address, p_doctor_id);
-       SELECT LAST_INSERT_ID() AS NewPatientID;
+       SELECT LAST_INSERT_ID() AS new_patient_id;
   END$$
 
 -- Modify address details of an existing patient
@@ -96,7 +96,7 @@ DELIMITER $$
    BEGIN
        UPDATE patients
        SET Address = p_new_address
-       WHERE PatientID = p_patient_id;
+       WHERE patient_id = p_patient_id;
        SELECT ROW_COUNT() AS RowsUpdated;
    END$$
 
@@ -104,28 +104,28 @@ DELIMITER $$
   DROP PROCEDURE IF EXISTS list_patient_mailing_by_hospital$$
    CREATE PROCEDURE list_patient_mailing_by_hospital(IN p_hospital_name VARCHAR(100))
    BEGIN
-       SELECT CONCAT(p.FirstName,' ',p.LastName) AS PatientName, p.Address
+       SELECT CONCAT(p.first_name,' ',p.last_name) AS patient_name, p.Address
        FROM patients p
-       JOIN doctors d ON d.DoctorID = p.DoctorID
-       JOIN hospitals h ON h.HospitalID = d.HospitalID
-       WHERE h.HospitalName = p_hospital_name
-       ORDER BY p.LastName, p.FirstName;
+       JOIN doctors d ON d.doctor_id = p.doctor_id
+       JOIN hospitals h ON h.hospital_id = d.hospital_id
+       WHERE h.hospital_name = p_hospital_name
+       ORDER BY p.last_name, p.first_name;
   END$$
 
 DELIMITER ;
  -- Doctors at Teaching hospitals accredited between 2015 and 2024
  CREATE OR REPLACE VIEW list_doctors_teaching_hospitals_accredited_2015_2024 AS
-   SELECT d. DoctorID,
-          CONCAT(d.FirstName,' ',d.LastName) as DoctorName,
+   SELECT d.doctor_id,
+          CONCAT(d.first_name,' ',d.last_name) as doctor_name,
           d.Specialty,
-          h.HospitalName,
-          h.AccreditationDate
+          h.hospital_name,
+          h.accreditation_date
    FROM doctors d
-   JOIN hospitals h ON h.HospitalID = d.HospitalID
-   WHERE h.HospitalType = 'Teaching'
-      AND h.AccreditationDate >='2015-01-01'
-      AND h.AccreditationDate < '2025-01-01'
-   ORDER BY h.HospitalName, d.LastName;
+   JOIN hospitals h ON h.hospital_id = d.hospital_id
+   WHERE h.hospital_type = 'Teaching'
+      AND h.accreditation_date >='2015-01-01'
+      AND h.accreditation_date < '2025-01-01'
+   ORDER BY h.hospital_name, d.last_name;
  
 DELIMITER $$
 -- Patients who may have a particular disease, based on the medication they have been prescribed
@@ -133,49 +133,49 @@ DELIMITER $$
    CREATE PROCEDURE list_patients_possibly_with_disease(IN p_disease_name VARCHAR(100))
    BEGIN
        SELECT DISTINCT
-              p.PatientID,
-              CONCAT(p.FirstName,' ',p.LastName) AS PatientName,
-              dis.DiseaseName,
-              m.MedicationName AS MedicationPrescribed
+              p.patient_id,
+              CONCAT(p.first_name,' ',p.last_name) AS patient_name,
+              dis.disease_name,
+              m.medication_name AS MedicationPrescribed
        FROM diseases dis
-       JOIN disease_medication dm ON dm.DiseaseID = dis.DiseaseID
-       JOIN medications m ON m.MedicationID = dm.MedicationID
-       JOIN prescriptions pr ON  pr.MedicationID = dm.MedicationID
-       JOIN patients p ON p.PatientID = pr.PatientID
-       WHERE dis.DiseaseName = p_disease_name
-       ORDER BY PatientName;
+       JOIN disease_medication dm ON dm.disease_id = dis.disease_id
+       JOIN medications m ON m.medication_id = dm.medication_id
+       JOIN prescriptions pr ON  pr.medication_id = dm.medication_id
+       JOIN patients p ON p.patient_id = pr.patient_id
+       WHERE dis.disease_name = p_disease_name
+       ORDER BY patient_name;
    END$$
 
 -- Doctors who specialise in a particular disease
   DROP PROCEDURE IF EXISTS list_doctors_specialising_in_disease$$
    CREATE PROCEDURE list_doctors_specialising_in_disease(IN p_disease_name VARCHAR(100))
    BEGIN
-       SELECT d.DoctorID,
-              CONCAT(d.FirstName,' ',d.LastName) AS DoctorName,
+       SELECT d.doctor_id,
+              CONCAT(d.first_name,' ',d.last_name) AS doctor_name,
               d.Specialty,
-              h.HospitalName,
-              dis.DiseaseName
+              h.hospital_name,
+              dis.disease_name
        FROM diseases dis
-       JOIN disease_specialist ds ON ds. DiseaseID = dis.DiseaseID
-       JOIN doctors d ON d.DoctorID = ds.DoctorID
-       JOIN hosptals h ON h.HospitalID = d.HospitalID
-       WHERE dis.DiseaseName = p_disease_name
-       ORDER BY h.HospitalName,d.LastName;
+       JOIN disease_specialist ds ON ds.disease_id = dis.disease_id
+       JOIN doctors d ON d.doctor_id = ds.doctor_id
+       JOIN hospitals h ON h.hospital_id = d.hospital_id
+       WHERE dis.disease_name = p_disease_name
+       ORDER BY h.hospital_name,d.last_name;
   END$$
 
  DELIMITER ;
 -- All lab results for all patients over 60 years of age
   CREATE OR REPLACE VIEW list_lab_results_patients_over_age_60 AS
-   SELECT lr.LabResultID,
-          CONCAT(p.FirstName,' ',p.LastName) AS PatientName,
-          TIMESTAMPDIFF(YEAR, p.DateOfBirth,CURDATE()) AS PatientAge,
-          lr.TestType,
-          lr.ResultValue,
-          lr.TestDate
+   SELECT lr.lab_result_id,
+          CONCAT(p.first_name,' ',p.last_name) AS patient_name,
+          TIMESTAMPDIFF(YEAR, p.date_of_birth,CURDATE()) AS PatientAge,
+          lr.test_type,
+          lr.result_value,
+          lr.test_date
    FROM lab_results lr
-   JOIN patients p ON p.PatientID = lr.PatientID
-   WHERE TIMESTAMPDIFF(YEAR, p.DateOfBirth,CURDATE()) >60
-   ORDER BY p.LastName, p.FirstName, lr.TestDate;
+   JOIN patients p ON p.patient_id = lr.patient_id
+   WHERE TIMESTAMPDIFF(YEAR, p.date_of_birth,CURDATE()) >60
+   ORDER BY p.last_name, p.first_name, lr.test_date;
  
 
 DELIMITER $$
@@ -183,110 +183,110 @@ DELIMITER $$
   DROP PROCEDURE IF EXISTS list_appointments_for_patient$$
    CREATE PROCEDURE list_appointments_for_patient(IN p_patient_id INT)
    BEGIN
-       SELECT a.AppointmentID,
-              a.AppointmentDate,
+       SELECT a.appointment_id,
+              a.appointment_date,
               a.Status,
-              CONCAT(p.FirstName,' ', p.LastName) AS PatientName,
-              CONCAT(d.FirstName,' ', d.LastName) AS DoctorName,
+              CONCAT(p.first_name,' ', p.last_name) AS patient_name,
+              CONCAT(d.first_name,' ', d.last_name) AS doctor_name,
               d.Specialty
        FROM appointments a
-       JOIN patients p ON p.PatientID = a.PatientID
-       JOIN doctors d ON d.DoctorID = a.DoctorID
-       WHERE a.PatientID = p_patient_id
-       ORDER BY a.AppointmentDate;
+       JOIN patients p ON p.patient_id = a.patient_id
+       JOIN doctors d ON d.doctor_id = a.doctor_id
+       WHERE a.patient_id = p_patient_id
+       ORDER BY a.appointment_date;
   END$$
 
 -- All appointments for a given doctor
   DROP PROCEDURE IF EXISTS list_appointments_for_doctor$$
    CREATE PROCEDURE list_appointments_for_doctor(IN p_doctor_id INT)
    BEGIN
-       SELECT a.AppointmentID,
-              a.AppointmentDate,
+       SELECT a.appointment_id,
+              a.appointment_date,
               a.Status,
-              CONCAT(d.FirstName,' ', d.LastName) AS DoctorName,
-              CONCAT(p.FirstName,' ', p.LastName) AS PatientName
+              CONCAT(d.first_name,' ', d.last_name) AS doctor_name,
+              CONCAT(p.first_name,' ', p.last_name) AS patient_name
        FROM appointments a
-       JOIN doctors d ON d.DoctorID = a.DoctorID
-       JOIN patients p ON p.PatientID = a.PatientID
-       WHERE a.DoctorID = p_doctor_id
-       ORDER BY a.AppointmentDate;
+       JOIN doctors d ON d.doctor_id = a.doctor_id
+       JOIN patients p ON p.patient_id = a.patient_id
+       WHERE a.doctor_id = p_doctor_id
+       ORDER BY a.appointment_date;
   END$$
 
 -- All prescriptions made from a particular hospital ordered alphabetically by medication name
   DROP PROCEDURE IF EXISTS list_prescriptions_by_hospital_report$$
     CREATE PROCEDURE  list_prescriptions_by_hospital_report(IN p_hospital_name VARCHAR(100))
     BEGIN
-       SELECT m.MedicationName AS 'Medication Name',
-              CONCAT(d.FirstName,' ',d.LastName) AS 'Doctor Name',
-              CONCAT(p.FirstName,' ',p.LastName) AS 'Patient Name',
-              h.HospitalName  AS 'Hospital Name'
+       SELECT m.medication_name AS 'Medication Name',
+              CONCAT(d.first_name,' ',d.last_name) AS 'Doctor Name',
+              CONCAT(p.first_name,' ',p.last_name) AS 'Patient Name',
+              h.hospital_name  AS 'Hospital Name'
        FROM prescriptions pr
-       JOIN medications m ON m.MedicationID = pr.MedicationID
-       JOIN doctors d ON d.DoctorID = pr.DoctorID
-       JOIN patients p ON p.PatientID = pr.PatientID
-       JOIN hospitals h ON h.HospitalID = d.HospitalID
-       WHERE h.HospitalName = p_hospital_name
-       ORDER BY m.MedicationName ASC;
+       JOIN medications m ON m.medication_id = pr.medication_id
+       JOIN doctors d ON d.doctor_id = pr.doctor_id
+       JOIN patients p ON p.patient_id = pr.patient_id
+       JOIN hospitals h ON h.hospital_id = d.hospital_id
+       WHERE h.hospital_name = p_hospital_name
+       ORDER BY m.medication_name ASC;
   END$$
 
 DELIMITER ;
 -- All lab results from all hospitals accredited between 2013 and 2020
   CREATE OR REPLACE VIEW list_lab_results_hospitals_accredited_2013_2020 AS
-   SELECT lr.LabResultID,
-          lr.TestType,
-          lr.ResultValue,
-          lr.TestDate,
-          CONCAT(p.FirstName,' ',p.LastName) AS 'Patient Name',
-          h.HospitalName,
-          h.AccreditationDate
+   SELECT lr.lab_result_id,
+          lr.test_type,
+          lr.result_value,
+          lr.test_date,
+          CONCAT(p.first_name,' ',p.last_name) AS 'Patient Name',
+          h.hospital_name,
+          h.accreditation_date
    FROM lab_results lr
-   JOIN doctors d ON d.DoctorID = lr.DoctorID
-   JOIN hospitals h ON h.HospitalID = d.HospitalID
-   JOIN patients p ON p.PatientID = lr.PatientID
-   WHERE h.AccreditationDate >= '2013-01-01'
-      AND h.AccreditationDate <'2021-01-01'
-   ORDER BY lr.TestDate;
+   JOIN doctors d ON d.doctor_id = lr.doctor_id
+   JOIN hospitals h ON h.hospital_id = d.hospital_id
+   JOIN patients p ON p.patient_id = lr.patient_id
+   WHERE h.accreditation_date >= '2013-01-01'
+      AND h.accreditation_date <'2021-01-01'
+   ORDER BY lr.test_date;
  
 -- Most of the prescriptions made by which doctor
   CREATE OR REPLACE VIEW top_prescribing_doctor AS
-    SELECT d.DoctorID,
-           CONCAT(d.FirstName,' ',d.LastName) AS 'Doctor Name',
+    SELECT d.doctor_id,
+           CONCAT(d.first_name,' ',d.last_name) AS 'Doctor Name',
            d.Specialty ,
-           h.HospitalName,
-    COUNT(pr.PrescriptionID) AS TotalPrescriptions
+           h.hospital_name,
+    COUNT(pr.prescription_id) AS TotalPrescriptions
     FROM doctors d
-    JOIN prescriptions pr ON pr.DoctorID = d.DoctorID
-    JOIN hospitals h ON h.HospitalID = d.HospitalID
-    GROUP BY d.DOCTORID,d.FirstName,d.LastName,d.Specialty,h.HospitalName
+    JOIN prescriptions pr ON pr.doctor_id = d.doctor_id
+    JOIN hospitals h ON h.hospital_id = d.hospital_id
+    GROUP BY d.doctor_id,d.first_name,d.last_name,d.Specialty,h.hospital_name
     ORDER BY TotalPrescriptions DESC LIMIT 1;
 
 -- All doctors at the hospital with the biggest size (number of beds)
   CREATE OR REPLACE VIEW list_doctors_at_largest_hospital AS
-    SELECT d.DoctorID,
-           CONCAT(d.FirstName,' ',d.LastName) AS 'Doctor Name',
+    SELECT d.doctor_id,
+           CONCAT(d.first_name,' ',d.last_name) AS 'Doctor Name',
            d.Specialty,
-           h.HospitalName,
-           h.NumberOfBeds
+           h.hospital_name,
+           h.number_of_beds
     FROM doctors d
-    JOIN hospitals h ON h.HospitalID = d.HospitalID
-    where h.NumberOfBeds = (SELECT MAX(NumberOfBeds) FROM hospitals)
-    ORDER BY d.LastName,d.FirstName;
+    JOIN hospitals h ON h.hospital_id = d.hospital_id
+    where h.number_of_beds = (SELECT MAX(number_of_beds) FROM hospitals)
+    ORDER BY d.last_name,d.first_name;
 
 --  All hospital names accredited prior to 2015 that have Emergency Service facilities
   CREATE OR REPLACE VIEW list_pre2015_emergency_hospitals AS
-   SELECT HospitalName FROM hospitals WHERE AccreditationDate <'2015-01-01' AND EmergencyServices = 'Yes'
-   ORDER BY HospitalName;
+   SELECT hospital_name FROM hospitals WHERE accreditation_date <'2015-01-01' AND emergency_services = 'Yes'
+   ORDER BY hospital_name;
 
 --  All patients registered with doctors based at hospitals with < 400 beds
  CREATE OR REPLACE VIEW list_patients_at_small_hospitals AS
-   SELECT p.PatientID,
-   CONCAT(p.FirstName,' ', p.LastName) AS 'Patient Name',
+   SELECT p.patient_id,
+   CONCAT(p.first_name,' ', p.last_name) AS 'Patient Name',
           p.Address,
-   CONCAT(d.FirstName,' '',d.LastName) AS 'Doctor Name',
-          h.HospitalName,
-          h.NumberOfBeds
+   CONCAT(d.first_name,' ',d.last_name) AS 'Doctor Name',
+          h.hospital_name,
+          h.number_of_beds
   FROM patients p
-  JOIN doctors d ON d.DoctorID = p.DoctorID
-  JOIN hospitals h ON h.HospitalID = d.HospitalID
-  WHERE h.NumberOfBeds <400
-  ORDER BY h.HospitalName, p.LastName, p.FirstName;
+  JOIN doctors d ON d.doctor_id = p.doctor_id
+  JOIN hospitals h ON h.hospital_id = d.hospital_id
+  WHERE h.number_of_beds <400
+  ORDER BY h.hospital_name, p.last_name, p.first_name;
