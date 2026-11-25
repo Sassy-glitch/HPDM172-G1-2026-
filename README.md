@@ -40,9 +40,9 @@ Entity–relationship diagram (ERD) of a healthcare database showing relationshi
 | patients | Patients and their registered doctor | 600 |
 | medications | Available medications | 30 |
 | prescriptions | Medication prescribed to a patient by a doctor | 500 |
-| diseases | List of diseases | |
-| disease_medication | Which medication treats which disease | |
-| disease_specialist | Which doctor specialises in which disease | |
+| diseases | List of diseases | 20 |
+| disease_medication | Which medication treats which disease | 55 |
+| disease_specialist | Which doctor specialises in which disease | 299 |
 | appointments | Scheduled appointments | 300 |
 | lab_results | Lab test results for patients | 300 |
 
